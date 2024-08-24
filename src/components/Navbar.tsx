@@ -13,8 +13,8 @@ const Navbar = () => {
         <Menu />
         <Link href="/">
           <div className="flex gap-2 text-2xl tracking-wide">
-            {/* <p className="text-2xl">ᴀʟɪꜰᴀᴛᴛᴀʀᴡᴀʟᴀ</p> */}
-            <p className="text-2xl">ＡＬＩＦ ＡＴＴＡＲＷＡＬＡ</p>
+            <p className="text-2xl">ᴀʟɪꜰᴀᴛᴛᴀʀᴡᴀʟᴀ</p>
+            {/* <p className="text-2xl">ＡＬＩＦ ＡＴＴＡＲＷＡＬＡ</p> */}
             {/* <Image
               width={200}
               height={200}
@@ -34,8 +34,8 @@ const Navbar = () => {
           <Link href="/" className="flex items-center gap-3">
             {/* <Image src="/alif.png" alt="" width={40} height={40} /> */}
             <div className="text-2xl tracking-wide">
-              {/* <p>ᴀʟɪꜰᴀᴛᴛᴀʀᴡᴀʟᴀ</p> */}
-              <p>ＡＬＩＦ ＡＴＴＡＲＷＡＬＡ</p>
+              <p>ᴀʟɪꜰᴀᴛᴛᴀʀᴡᴀʟᴀ</p>
+              {/* <p>ＡＬＩＦ ＡＴＴＡＲＷＡＬＡ</p> */}
               {/* <Image
                 width={200}
                 height={200}
