@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { WixClientContextProvider } from "@/context/wixContext";
 import { Analytics } from "@vercel/analytics/react";
+import MagneticCursor from "@/components/MagneticCursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <WixClientContextProvider>
+          <MagneticCursor />
           <Navbar />
           {children}
           <Analytics />

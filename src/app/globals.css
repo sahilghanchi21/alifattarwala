@@ -8,3 +8,173 @@
 .scrollbar-hide {
   scrollbar-width: none;
 }
+
+/* simple cursor */
+/* .cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  z-index: 10000;
+  transition: transform 0.1s ease;
+}
+
+[data-magnetic] {
+  display: inline-block;
+  transition: transform 0.3s ease;
+} */
+
+/* 1. Neon Glow Cursor */
+/* .cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff005e, #00d4ff);
+  box-shadow: 0 0 15px rgba(255, 0, 94, 0.5), 0 0 15px rgba(0, 212, 255, 0.5);
+  pointer-events: none;
+  z-index: 10000;
+  transition: transform 0.1s ease, box-shadow 0.1s ease, background 0.1s ease;
+}
+
+.cursor:hover {
+  transform: scale(1.5);
+  box-shadow: 0 0 25px rgba(255, 0, 94, 0.8), 0 0 25px rgba(0, 212, 255, 0.8);
+}
+
+[data-magnetic] {
+  display: inline-block;
+  transition: transform 0.3s ease;
+} */
+
+/* 2. Glass Morphism Cursor */
+/* .cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  z-index: 10000;
+  transition: transform 0.1s ease, backdrop-filter 0.2s ease;
+}
+
+.cursor:hover {
+  transform: scale(1.5);
+  backdrop-filter: blur(15px);
+}
+
+[data-magnetic] {
+  display: inline-block;
+  transition: transform 0.3s ease;
+} */
+
+/* 3. Shadow Drop Cursor */
+/* .cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  z-index: 10000;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.cursor:hover {
+  transform: scale(1.5);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+[data-magnetic] {
+  display: inline-block;
+  transition: transform 0.3s ease;
+} */
+
+/* custom cursor */
+/* .cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 60px;
+  pointer-events: none;
+  z-index: 10000;
+  transition: transform 0.1s ease;
+}
+
+.cursor::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #F35C7A; 
+  border-radius: 20% 20% 40% 40%; 
+  background: transparent; 
+  box-shadow: 0 0 15px rgba(243, 92, 122, 0.5);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+[data-magnetic] {
+  display: inline-block;
+  transition: transform 0.3s ease;
+} */
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 10000;
+  color: #f35c7a;
+  font-size: 20px;
+  font-family: "Arial", sans-serif; /* or any other font */
+  border: 1px solid #f35c7a;
+  padding: 10px;
+  border-radius: 50%; /* Change to 50% for a circular border */
+  background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+  transition: transform 0.1s ease;
+  white-space: nowrap;
+  width: 60px; /* Set a fixed width */
+  height: 60px; /* Set a fixed height */
+  display: flex container;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cursor::before {
+  content: "أليف";
+  display: block;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px; /* Adjust size as needed */
+  padding: 5px;
+  line-height: -1; /* Adjust line height to center text vertically */
+}
+
+[data-magnetic] {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+[data-magnetic]:hover ~ .cursor {
+  transform: scale(1.5);
+  color: #f35c7a; /* Adjust the hover effect as needed */
+}

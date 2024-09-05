@@ -34,7 +34,7 @@ const Navbar = () => {
           <Link href="/" className="flex items-center gap-3">
             {/* <Image src="/alif.png" alt="" width={40} height={40} /> */}
             <div className="text-2xl tracking-wide">
-              <p>ᴀʟɪꜰᴀᴛᴛᴀʀᴡᴀʟᴀ</p>
+              <p className="font-countColor">ᴀʟɪꜰᴀᴛᴛᴀʀᴡᴀʟᴀ</p>
               {/* <p>ＡＬＩＦ ＡＴＴＡＲＷＡＬＡ</p> */}
               {/* <Image
                 width={200}
